@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="public/ui/jquery-ui/external/jquery/jquery.js"></script>
+        <script type="text/javascript" src="public/ui/jquery-ui/jquery-ui.js"></script>
+        <link href="public/ui/jquery-ui/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="public/ui/jquery-ui/jquery-ui.theme.css" media="screen" rel="stylesheet" type="text/css" />
+        
+         <script type="text/javascript" src="public/index.js"></script>
+        
+        
+        
+    </head>
+    <body>
+    <center>
+
+        <div id="formulario_sol" title="REGISTRO DE SOLDADO">
+            <form id="frm_registro" action="/DistritoApp/SoldadoServlet">
+                <input type="text" id="cod_sol"  name="cod_sol" hidden>
+                <table>
+                    <tr>
+                        <td class="ui-widget-header">Nombres:</td><td class="ui-widget-content"><input type="text" id="nom" name="nom"  placeholder="Ingrese Nombre" onKeyUp="this.value = this.value.toUpperCase();" >*</td>
+                    </tr>
+                    <tr>
+                        <td class="ui-widget-header">Apellidos:</td><td class="ui-widget-content"><input type="text" id="ape" name="ape"  placeholder="Ingrese Apellidos" onKeyUp="this.value = this.value.toUpperCase();" >*</td>
+                    </tr>
+                    <tr>
+                        <td class="ui-widget-header">Cuerpo Distrito:</td><td class="ui-widget-content">
+                            <select id="cuerpo" name="cuerpo" >
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ui-widget-header">Compania:</td><td class="ui-widget-content"><select id="comp" name="comp" >
+
+                            </select>*</td>
+                    </tr>
+                    <tr>
+                        <td class="ui-widget-header">Ciudad:</td><td class="ui-widget-content"><input type="text" id="ciu" name="ciu"   placeholder="Ingrese Usuario" >*</td>
+                    </tr>
+                    <tr>
+                        <td class="ui-widget-header">Depto:</td><td class="ui-widget-content"><input type="text" id="depto" name="depto"   placeholder="Ingrese Usuario" >*</td>
+                    </tr>
+
+                </table>
+                <button type="submit">Guardar</button>
+            </form>
+
+
+        </div>
+
+
+
+    </center>
+</body>
+</html>
